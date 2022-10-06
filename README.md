@@ -205,6 +205,7 @@ services:
 * `PORT_RANGE`  - Port range to whitelist for both UDP and TCP. For example '- PORT_RANGE=9091 9095'
 * `CHECK_CONNECTION_INTERVAL`  - Time in seconds to check connection and reconnect if need it. (300 by default) For example '- CHECK_CONNECTION_INTERVAL=600'
 * `CHECK_CONNECTION_URL`  - URL for checking Internet connection. (www.google.com by default) For example '- CHECK_CONNECTION_URL=www.custom.domain'
+* `RECONNECT_INTERVAL_SEC` - Interval for reconnecting (60 by default)
 
 # Issues
 
@@ -213,3 +214,6 @@ If you have any problems with or questions about this image, please contact me t
 # Disclaimer 
 This project is independently developed for personal use, there is no affiliation with NordVpn or Nord Security companies,
 Nord Security companies are not responsible for and have no control over the nature, content and availability of this project.
+
+# Disclaimer 2
+This project is modified to handle traffic with automatic connection change using `RECONNECT_INTERVAL_SEC` seconds interval.
