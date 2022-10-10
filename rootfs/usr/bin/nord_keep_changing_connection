@@ -1,5 +1,7 @@
 #!/usr/bin/with-contenv bash
 
+sleep 60
+
 while true 
 do
   [[ -n ${PRE_CONNECT} ]] && eval ${PRE_CONNECT}
